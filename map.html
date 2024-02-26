@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rollo Shaw | Map</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Mapbox GL CSS -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
+    <style>
+        /* Apply responsive styles */
+        #map {
+            width: 100%;
+            height: 250px; /* Adjust the initial height as needed */
+        }
+
+        /* Add media query for smaller screens */
+        @media (max-width: 768px) {
+            #map {
+                height: 200px; /* Adjust height for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Rollo Shaw | Map</a></h1>
+    </header>
+
+    <section>
+        <p>Exploring mapping features by recording where I've traveled in the past</p>
+    </section>
+
+    <section>
+        <hr>
+        <!-- Insert the map container here -->
+        <div id="map"></div>
+        <hr>
+    </section>
+
+    <footer>
+        <p>Made by <a href="about.html">Me</a> & ChatGPT | Inspired by <a href="https://patrickcollison.com">Patrick Collison</a> | 2024</p>
+    </footer>
+
+    <!-- Mapbox GL JS -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoicm9sbG9zIiwiYSI6ImNscnQ5dHM5YzAwOXUybW10dnRkOGp0d2sifQ.t2nMT3px3GVRfe09-ZtoUA';
+
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/rollos/clrta6ler002a01phdwev8o0j/draft',
+            center: [0, 0.5],
+            zoom: 0,
+            scrollZoom: true
+        });
+    </script>
+</body>
+</html>
