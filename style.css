@@ -1,0 +1,79 @@
+body {
+    margin: 0px;
+    padding: 20px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 14px; /* Slightly larger for better readability on mobile */
+    line-height: 1.6;
+    max-width: 100%; /* Responsive width for mobile devices */
+
+}
+
+h1, h2 {
+    font-weight: bold; /* Ensure headings are bold */
+}
+
+h1 {
+    font-size: 20px; /* Default size for mobile */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px; /* Default size for mobile */
+    margin-top: 10px;
+}
+
+a {
+    color: #2D7434;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkorange;
+    text-decoration: none
+}
+
+p, li {
+    margin-bottom: 0px;
+}
+
+ul {
+    font-size: 14px;
+    line-height: 1.6;
+    padding-left: 15px; /* Adjusted padding for mobile */
+}
+
+footer {
+    font-size: 12px;
+    text-align: left;
+}
+
+header h1 a {
+    color: #2D7434;
+    text-decoration: none;
+}
+
+header h1 a:hover {
+    color: darkorange;
+    text-decoration: none;
+}
+
+/* Styles for larger screens (tablets, desktops) */
+@media (min-width: 600px) {
+    body {
+        font-size: 14px;
+        max-width: 800px; /* Apply max-width for larger screens */
+    }
+
+    h1 {
+        font-size: 16px; /* Adjusted for larger screens */
+    }
+
+    h2 {
+        font-size: 14px; /* Adjusted for larger screens */
+    }
+
+    ul {
+        padding-left: 20px; /* Original padding for larger screens */
+    }
+}
